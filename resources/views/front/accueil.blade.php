@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <h1 class="lead">EGLISE EVANGELIQUE "PORTE DE VIE"</h1>
-                    <p class="tagline">Sa mission est La marque distinctive d’une communauté parmi tant d’autres est sa volonté à s’organiser, à s’unir pour penser à son développement. L’union ou l’organisation des citoyens s’observe donc par la création des fédérations ou associations au sein desquelles, ils abordent les réels problèmes qui mineraient le développement de leur communauté en vue d’en trouver des solutions. <a href="notre_eglise.html">Plus d'informations</a></p>
+                    <p class="tagline">Sa mission est La marque distinctive d’une communauté parmi tant d’autres est sa volonté à s’organiser, à s’unir pour penser à son développement. L’union ou l’organisation des citoyens s’observe donc par la création des fédérations ou associations au sein desquelles, ils abordent les réels problèmes qui mineraient le développement de leur communauté en vue d’en trouver des solutions. <a href="{{ route('eglise') }}">Plus d'informations</a></p>
                 </div>
             </div>
         </header>
@@ -21,7 +21,7 @@
 
                 <div class="row  col-md-12">
                     <div class="col-md-3 col-sm-6 highlight">
-                        <div class="h-caption"><h4>   <img src="assets/images/François.jpg" alt="" class="img-rounded pull-right" width="300" >  <a href="biographie_Prophète.html">Biographie du prophète </a> </h4>
+                        <div class="h-caption"><h4>   <img src="{{ asset('assets/images/François.jpg') }}" alt="" class="img-rounded pull-right" width="300" >  <a href="biographie_Prophète.html">Biographie du prophète </a> </h4>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 highlight">
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 highlight">
-                        <div class="h-caption"><h4><img src="assets/images/rendvous.png" alt="" class="img-rounded pull-right" width="300" ><li class="dropdown">
+                        <div class="h-caption"><h4><img src="{{ asset('assets/images/rendvous.png') }}" alt="" class="img-rounded pull-right" width="300" ><li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Prendre un rendez vous<b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="rend_v_simple.html">rendez vous simple</a></li>
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 highlight">
-                        <div class="h-caption"><h4><img src="assets/images/ligne.png" alt="" class="img-rounded pull-right" width="300" >
+                        <div class="h-caption"><h4><img src="{{ asset('assets/images/ligne.png') }}" alt="" class="img-rounded pull-right" width="300" >
                             <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rejoignez nous en ligne pour les cultes  <b class="caret"></b></a>
                                 <ul class="dropdown-menu">

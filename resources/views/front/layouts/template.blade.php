@@ -7,10 +7,11 @@
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
 	<title>EGLISE EVANGELIQUE "PORTE DE VIE"</title>
-	<link rel="shortcut icon" href="assets/images/logo1.png">
+	<link rel="shortcut icon" href="{{ asset('assets/images/logo1.png') }}">
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <script src="https://cdn.fedapay.com/checkout.js?v=1.1.7"></script>
 
 	<!-- Custom styles for our template -->
 	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >

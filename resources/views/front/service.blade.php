@@ -128,7 +128,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <a class="thumbnail" href="sidebar-right.html">
                     <span class="img">
-                        <img src="assets/images/s1.jpg" alt="">
+                        <img src="{{ asset('assets/images/s1.jpg') }}" alt="">
                         <span class="cover"><span class="more">See details &rarr;</span></span>
                     </span>
                     <span class="title">Sample title - big data solutions</span>
@@ -139,7 +139,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <a class="thumbnail" href="sidebar-right.html">
                     <span class="img">
-                        <img src="assets/images/s1.jpg" alt="">
+                        <img src="{{ asset('assets/images/s1.jpg') }}" alt="">
                         <span class="cover"><span class="more">See details &rarr;</span></span>
                     </span>
                     <span class="title">Pure ipsum - development services </span>
@@ -150,7 +150,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <a class="thumbnail" href="sidebar-right.html">
                     <span class="img">
-                        <img src="assets/images/s1.jpg" alt="">
+                        <img src="{{ asset('assets/images/s1.jpg') }}" alt="">
                         <span class="cover"><span class="more">See details &rarr;</span></span>
                     </span>
                     <span class="title">Lorem studios - interior and patio design</span>
@@ -162,7 +162,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <a class="thumbnail" href="sidebar-right.html">
                     <span class="img">
-                        <img src="assets/images/s1.jpg" alt="">
+                        <img src="{{ asset('assets/images/s1.jpg') }}" alt="">
                         <span class="cover"><span class="more">See details &rarr;</span></span>
                     </span>
                     <span class="title">Pure ipsum - development services </span>
@@ -173,7 +173,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <a class="thumbnail" href="sidebar-right.html">
                     <span class="img">
-                        <img src="assets/images/s1.jpg" alt="">
+                        <img src="{{ asset('assets/images/s1.jpg') }}" alt="">
                         <span class="cover"><span class="more">See details &rarr;</span></span>
                     </span>
                     <span class="title">Lorem studios - interior and patio design</span>
@@ -184,7 +184,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <a class="thumbnail" href="sidebar-right.html">
                     <span class="img">
-                        <img src="assets/images/s1.jpg" alt="">
+                        <img src="{{ asset('assets/images/s1.jpg') }}" alt="">
                         <span class="cover"><span class="more">See details &rarr;</span></span>
                     </span>
                     <span class="title">Lorem studios - interior and patio design</span>

@@ -9,7 +9,7 @@
 </header>
 <div class="container">
     <div class="pull-left">
-        <img src="assets/images/François.jpg" alt="" class="img-thumbnail" width="360">
+        <img src="{{ asset('assets/images/François.jpg') }}" alt="" class="img-thumbnail" width="360">
     </div>
 </div>
 

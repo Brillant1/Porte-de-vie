@@ -29,7 +29,7 @@
                                 <div class="pricing_body bg-white p-top-110 p-bottom-60">
                                     <div class="row ">
                                         <div class="h-caption">
-                                            <h4>   <img src="assets/images/François.jpg" alt="" class="img-thumbnail" width="360" > </h4>
+                                            <h4>   <img src="{{ asset('assets/images/François.jpg') }}" alt="" class="img-thumbnail" width="360" > </h4>
                                         </div>
                                     </div>
                                 </div>
@@ -63,7 +63,7 @@
                                <div class="pricing_body bg-white p-top-110 p-bottom-60">
                                     <div class="row ">
                                         <div class="h-caption">
-                                            <h4>   <img src="assets/images/François.jpg" alt="" class="img-thumbnail" width="360" > </h4>
+                                            <h4>   <img src="{{ asset('assets/images/François.jpg') }}" alt="" class="img-thumbnail" width="360" > </h4>
                                         </div>
                                     </div>
                                 </div>
@@ -82,7 +82,7 @@
                                <div class="pricing_body bg-white p-top-110 p-bottom-60">
                                     <div class="row ">
                                         <div class="h-caption">
-                                            <h4>   <img src="assets/images/François.jpg" alt=""  class="img-thumbnail" width="360" > </h4>
+                                            <h4>   <img src="{{ asset('assets/images/François.jpg') }}" alt=""  class="img-thumbnail" width="360" > </h4>
                                         </div>
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@
                                <div class="pricing_body bg-white p-top-110 p-bottom-60">
                                     <div class="row ">
                                         <div class="h-caption">
-                                            <h4>   <img src="assets/images/François.jpg" alt=""  class="img-thumbnail" width="360" > </h4>
+                                            <h4>   <img src="{{ asset('assets/images/François.jpg') }}" alt=""  class="img-thumbnail" width="360" > </h4>
                                         </div>
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@
                                <div class="pricing_body bg-white p-top-110 p-bottom-60">
                                     <div class="row ">
                                         <div class="h-caption">
-                                            <h4>   <img src="assets/images/François.jpg" alt="" class="img-thumbnail" width="360" > </h4>
+                                            <h4>   <img src="{{ asset('assets/images/François.jpg') }}" alt="" class="img-thumbnail" width="360" > </h4>
                                         </div>
                                     </div>
                                 </div>
@@ -142,7 +142,7 @@
                                <div class="pricing_body bg-white p-top-110 p-bottom-60">
                                     <div class="row ">
                                         <div class="h-caption">
-                                            <h4>   <img src="assets/images/François.jpg" alt=""  class="img-thumbnail" width="360" > </h4>
+                                            <h4>   <img src="{{ asset('assets/images/François.jpg') }}" alt=""  class="img-thumbnail" width="360" > </h4>
                                         </div>
                                     </div>
                                 </div>
@@ -161,7 +161,7 @@
                                <div class="pricing_body bg-white p-top-110 p-bottom-60">
                                     <div class="row ">
                                         <div class="h-caption">
-                                            <h4>   <img src="assets/images/François.jpg" alt=""  class="img-thumbnail" width="360" > </h4>
+                                            <h4>   <img src="{{ asset('assets/images/François.jpg') }}" alt=""  class="img-thumbnail" width="360" > </h4>
                                         </div>
                                     </div>
                                 </div>

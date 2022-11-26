@@ -8,7 +8,7 @@
 
 		<div class="row">
 			<div class="col-xs-6">
-				<img src="assets/images/pro.jpg" alt=" Ma Photo " width="100%" height="100%"  class="img-thumbnail">
+				<img src="{{ asset('assets/images/pro.JPG') }}" alt=" Ma Photo " width="100%" height="100%"  class="img-thumbnail">
 				<h1 class="bio text-center">Ma Biographie</h1>
 				<p>
 					les formes traditionnelles de l'information, les données stockées sur des supports constituent des fichiers. Ces

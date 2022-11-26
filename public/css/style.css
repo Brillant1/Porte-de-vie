@@ -1,0 +1,1388 @@
+@charset "UTF-8";
+
+:root {
+    --r-orange: #ff8000;
+    --r-green: #178b01;
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/Montserrat-Bold.ttf");
+    display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url("../fonts/Montserrat-Light.ttf");
+    display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url("../fonts/Montserrat-Medium.ttf");
+    display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/Montserrat-Regular.ttf");
+    display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+    display: swap;
+}
+
+@import url('http://fonts.cdnfonts.com/css/work-sans');
+
+body {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.font-regular {
+    font-family: "Montserrat-Regular";
+}
+
+.font-medium {
+    font-family: "Montserrat-Medium";
+}
+
+.font-light {
+    font-family: "Montserrat-Light";
+}
+
+.font-bold {
+    font-family: "Montserrat-Bold";
+}
+
+.font-semibold {
+    font-family: "Montserrat-SemiBold";
+}
+
+.rosette-text-orange {
+    color: #ff8000 !important;
+}
+
+.rosette-text-green {
+    color: #178b01;
+}
+
+.rosette-text-blue {
+    color: #178bff;
+}
+
+.rosette-bg-green {
+    background-color: #178b01;
+}
+
+.rosette-bg-orange {
+    background-color: #ff8000;
+}
+.bg-favorite-color{
+    background-color:#032497F5 ;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--r-green);
+    font-weight: bold;
+}
+
+nav>ul>li>a{
+    font-size: 17px;
+    font-weight: bold;
+}
+#navbarSupportedContent>ul{
+    width: 55%;
+}
+.contaire-partenaire{
+    padding: 40px;
+}
+body{
+    box-sizing: border-box;
+}
+
+
+/* contact style code  */
+textarea {
+    height: 150px;
+    outline: 0;
+}
+
+.form-contact input[type="text"],
+.form-contact input[type="mail"],
+.form-contact input[type="phone"],
+.form-contact select
+{
+    height: 40px;
+    margin-top: 5px;
+}
+
+.localisation {
+    background-color: rgb(240, 240, 240);
+}
+.icon-reseau{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+#container-form-contact{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#container-form-contact>form{
+    width: 80%;
+}
+
+@media screen and (max-width:992px) {
+    #container-form-contact>form{
+        width: 95%;
+    }
+    .icon-reseau{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+
+
+}
+
+
+
+/* Historique page style code */
+
+.historique-img-container{
+    background-image: url('../images/together1.png');
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100%;
+}
+.activite-domaine-img-container{
+    background-image: url('../images/together2.jpeg');
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100%;
+}
+.historique-img-container-parent, .historique-img-container{
+    height: 300px;
+}
+.historique-container{
+    z-index: 99 ;
+    position: absolute;
+    top: 0px;
+    width: 100% ;
+    height: 300px;
+    background: rgba(83, 119, 104, 0.71);
+}
+.img-presentation-container{
+    background-color: antiquewhite;
+    height: 300px;
+    width: 380px;
+    background-image: url('../images/patou.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+/* .presentation-container{
+    width: 75%;
+} */
+.text-presentation-promotteur{
+
+    width: 96%;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 16px;
+
+}
+.titre-presentation-promotteur{
+    border-bottom: 4px solid #178b01;
+    width: 86%;
+}
+.naissance-youthway-text{
+    border-bottom: 4px solid #178b01;
+    width: 47%;
+}
+.p-historique{
+    text-align: justify;
+    line-height: 30px;
+    font-size: 16px;
+}
+.titre-mission{
+    border-bottom: 4px solid #178b01;
+    width: 25.5%;
+}
+.naissance-youthway-text, .titre-mission, .titre-presentation-promotteur{
+    font-size: 30px;
+}
+
+
+/* Activity page style code */
+
+.container-activty-category{
+    width: 90%;
+}
+.title-activity{
+    font-weight: bold;
+    color: black;
+    font-size: 1.2rem;
+}
+.title-activity-content{
+    text-align: justify;
+}
+.card-container-activity .card{
+    border: none;
+    padding: 10px;
+}
+.card-container-activity .card{
+    box-shadow: 0px 0 1px 1px rgb(226, 225, 225);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card-container-activity .card img{
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.category-nav>ul{
+    margin-left: 6%;
+    width: 30%;
+
+}
+.text-intervention{
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+
+
+
+
+/* Historique style code */
+.h1-rosette-presentation {
+    font-size: 48px;
+}
+
+.lien-historique {
+    background-color: #032497F5;
+    color: white;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    margin: 0.5rem 0rem;
+    display: inline-block;
+}
+
+.lien-historique:hover {
+    color: white;
+}
+
+
+.presentation-title h1 span {
+    height: 8px;
+    width: 100px;
+    background-color: #178b01;
+    display: inline-block;
+}
+.rosette-bg-blue-pure{
+    background: #032497F5;
+}
+.video-back {
+    background-color: #032497F5;
+    border-radius: 20px;
+    position: relative;
+    width: 75%;
+    height: 80%;
+    margin: 0px auto;
+}
+.presentation-scolaire{
+    height: 400px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.video-iframe {
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 20px;
+    margin: 0px auto;
+    background-color: #178b01;
+    top: 20px;
+    right: 10px;
+}
+
+.basic-2 .video-play-button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    display: block;
+    box-sizing: content-box;
+    width: 2rem;
+    height: 2.75rem;
+    padding: 1.125rem 1.25rem 1.125rem 1.75rem;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.basic-2 .video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 4.75rem;
+    height: 4.75rem;
+    border-radius: 50%;
+    background: #178b01;
+    animation: pulse-border 1500ms ease-out infinite;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.basic-2 .video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 50%;
+    background: #178b01;
+    transition: all 200ms;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.basic-2 .video-play-button span {
+    position: relative;
+    display: block;
+    z-index: 3;
+    top: 0.375rem;
+    left: 0.25rem;
+    width: 0;
+    height: 0;
+    border-left: 1.625rem solid #fff;
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+}
+/* @media screen  and (max-width:1140px) {
+
+    .presentation-container{
+        width: 90%;
+    }
+}
+
+@media screen  and (max-width:990px) {
+    .presentation-container{
+        width: 90%;
+    }
+}
+
+@media screen  and (max-width:955px) {
+    .presentation-container{
+        width: 95%;
+    }
+} */
+
+/* @media screen  and (max-width:720px) {
+    .presentation-container{
+        flex-direction: column;
+    }
+} */
+@media screen  and (max-width:768px) {
+
+    .actualite-container-title {
+        /* border: 1px solid red; */
+        font-size: 25px;
+    }
+    .call-to-discover-button{
+        display: none !important;
+    }
+
+    .context-presentation {
+        width: 100%;
+        position: relative;
+        /* border: 1px solid red; */
+    }
+
+    .context-presentation-content {
+        text-align: start;
+        width: 100%;
+    }
+
+    .context-video {
+        height: 250px;
+        margin: 2rem 0rem;
+    }
+
+    .presentation-scolaire {
+        /* border: 1px solid blue; */
+        height: auto;
+        margin: 2rem 0rem;
+        width: 100%;
+    }
+
+    .presentation-title h1 {
+        font-size: 30px;
+    }
+
+    .presentation-title h1 span {
+        height: 6px;
+    }
+
+    .atouts {
+        /* border: 1px solid red; */
+        margin: 0px auto;
+        width: 95%;
+        position: relative;
+        height: auto;
+    }
+
+    .atouts-title h1 {
+        font-size: 30px;
+    }
+
+    .atouts-title h1 span {
+        height: 6px;
+    }
+
+    .atout-item {
+        width: 100% !important;
+        /* border: 1px solid blue; */
+        margin: 1rem 0rem;
+        padding: 0px;
+    }
+
+    .atout-item .card-body h3 {
+        font-size: 25px;
+    }
+
+    .atout-item .card-body p {
+        font-size: 12px;
+        /* font-weight: 600; */
+    }
+
+    .atout-item .card {
+        width: 100%;
+        position: relative;
+    }
+
+    .atout-item-container {
+        padding: 0px;
+    }
+
+    .actualites {
+        margin: 0px auto;
+        width: 95%;
+        position: relative;
+        height: auto;
+    }
+
+    .actualites-title h1 {
+        font-size: 30px;
+    }
+
+    .actualites-title h1 span {
+        height: 6px;
+    }
+
+    .actualite-item {
+        width: 100% !important;
+        margin: 1rem 0rem;
+        padding: 0px;
+    }
+
+    .actualite-item .card-body h3 {
+        font-size: 25px;
+    }
+
+    .actualite-item .card-body p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .actualite-item .card {
+        width: 100%;
+        position: relative;
+    }
+
+    .actualite-item-container {
+        padding: 0px;
+    }
+
+
+}
+
+.atouts-title h1 {
+    font-size: 30px;
+}
+
+.atouts-title h1 span {
+
+    height: 8px;
+    width: 100px;
+    background-color: #178b01;
+    display: inline-block;
+
+}
+
+.h3-rosette-presentation{
+    font-weight: bold;
+}
+
+.atout-item .card {
+    border-radius: 0px 12px 0px 12px;
+    border: none;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Home page style code */
+a {
+    text-decoration: none;
+}
+
+.actualite-item a.lien-article:hover {
+    text-decoration: none;
+    color: #ff8000;
+}
+
+.actualites a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.rejoignez-nous-content a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.actualite-item .card img {
+    height: 250px;
+    position: relative;
+    object-fit: cover;
+    border-radius: 0px 12px 0px 0px;
+}
+.actualite-date {
+    position: absolute;
+    z-index: 100;
+    right: 0px;
+    width: 55px;
+    height: 55px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0px 12px 0px 0px;
+    font-size: 12px;
+}
+.actualite-item .card {
+    border-radius: 0px 12px 0px 12px;
+
+}
+.actualites-title h1 span {
+    height: 8px;
+    width: 100px;
+    background-color: #178b01;
+    display: inline-block;
+}
+
+.div-youthway-text>div>p:first-child{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+.div-youthway-text>div>p:first-child>span{
+    font-size:70px;
+    font-weight: 700;
+}
+#p-particulier{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:1600px) {
+    #promottuer-section{
+        width: 100%;
+    }
+}
+
+
+.call-to-discover-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+
+}
+#carousel-firstbanner-hp, #carousel-firstbanner-hp>.carousel-item{
+    height: 100%;
+}
+
+.div-youthway-text{
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    width: 100% ;
+    height: 100%;
+    background: rgba(3, 36, 151, 0.41);
+}
+
+.div-first-banniere{
+    width: 100%;
+    height: 30%;
+}
+
+.call-to-discover-button{
+    width: 250px;
+}
+
+.text-youthway{
+    margin-left: 10%;
+    margin-top: -5vh;
+}
+.container-mobile{
+    width: 75%;
+}
+
+@media screen and (max-width:1230px) {
+    .actualite-title{
+        font-size: 20px;
+    }
+    .actualite-card-text{
+        font-size: 18px;
+    }
+    .lire-article-link{
+
+    }
+}
+
+@media screen and (max-width:1185px) {
+
+    .div-first-banniere>p:first-child{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 60px;
+        margin-right:330px;
+    }
+
+    .div-first-banniere>p:first-child>span{
+        font-size:50px;
+        font-weight: 700;
+    }
+
+    .div-first-banniere>p:last-child{
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 35px;
+        line-height: 60px;
+
+    }
+
+    .call-to-discover-button{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .text-presentation-promotteur{
+        width: 100%;
+        font-size: 14px;
+    }
+    .titre-presentation-promotteur{
+        font-size: 25px;
+    }
+    .savoir-plus{
+        font-size: 14px;
+    }
+    .img-presentation-container{
+
+        height: 350px;
+        width: 400px;
+    }
+    .historique-container{
+        height: 230px;
+    }
+    .historique-img-container-parent, .historique-img-container{
+        height: 230px;
+    }
+    .h1-historique{
+        font-size: 35px;
+    }
+    .naissance-youthway-text, .titre-mission, .titre-presentation-promotteur{
+        font-size: 25px;
+    }
+    .p-historique{
+
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .div-youthway-text>div>p:first-child>span{
+        font-size:50px;
+        font-weight: 600;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #p-particulier{
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+
+
+
+    .naissance-youthway-text, .titre-mission, .titre-presentation-promotteur{
+        font-size: 1.4rem;
+    }
+
+    .img-presentation-container{
+        height: 250px;
+        width: 350px;
+    }
+
+
+    .historique-container{
+        height: 250px;
+    }
+    .historique-img-container-parent, .historique-img-container{
+        height: 250px;
+    }
+    .container-mobile{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .img-presentation-container{
+        height: 300px;
+        width: 450px;
+    }
+    .text-presentation-promotteur{
+        width: 100%;
+    }
+    .p-historique{
+        width: 100%;
+    }
+    #promoteur-section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    /* #promoteur-section{
+        width: 90%;
+    } */
+    .container-mobile{
+        width: 90%;
+
+    }
+}
+
+@media screen and (max-width:590px) {
+    .img-presentation-container{
+        height: 250px;
+        width: 430px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .div-youthway-text>div>p:first-child>span{
+        font-size:30px;
+        font-weight: 600;
+    }
+    .h1-historique{
+        font-size: 20px;
+    }
+    #p-particulier{
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 0;
+    }
+
+
+
+    .text-youthway{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 5vh;
+        height: 50%;
+    }
+
+    .call-to-discover-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+    .carousel-indicators{
+        display: none;
+    }
+
+    .container-mobile{
+        width: 90%;
+    }
+}
+#promottuer-section{
+    display: flex;
+
+}
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+
+}
+
+@media screen and (max-width:1300px) {
+
+}
+
+@media screen and (max-width:780px) {
+    .footer-pipe-web{
+        display: none;
+    }
+    .footer-bottom{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:570px) {
+    .div-first-banniere>p:first-child{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 60px;
+        margin-right:330px;
+        margin-bottom: 30px;
+    }
+
+    .div-first-banniere>p:first-child>span{
+        font-size:40px;
+        font-weight: 500;
+    }
+    .div-first-banniere>p:last-child{
+
+        font-size: 30px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    .call-to-discover-button{
+        padding-left: 15px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .img-presentation-container{
+        height: 220px;
+        width: 370px;
+    }
+
+    .text-presentation-promotteur{
+        width: 100%;
+    }
+    .container-mobile{
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .logo-abbr{
+        width:150px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .img-presentation-container{
+        height: 300px;
+        width: 300px;
+    }
+    .text-presentation-promotteur{
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:425px) {
+    .text-presentation-promotteur{
+        width: 100%;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .div-youthway-text>div>p:first-child>span{
+        font-size:25px;
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+    }
+    #p-particulier{
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 0;
+    }
+    .text-youthway{
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 5vh;
+        height: 50%;
+    }
+
+
+
+#carousel-firstbanner-hp, #carousel-firstbanner-hp>.carousel-item{
+    height: 120%;
+}
+
+.div-youthway-text{
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    width: 100% ;
+    height: 100%;
+    background: rgba(3, 36, 151, 0.41);
+}
+
+.div-first-banniere{
+    width: 100%;
+    height: 30%;
+}
+}
+
+@media screen and (max-width:430px) {
+    .read-article> p{
+        font-size: 14px;
+    }
+    .lire-article-link{
+        font-size: 16px;
+    }
+}
+
+
+
+/* Sharing on media style CSS code */
+
+/* .page-media-link {
+    padding: 110px;
+    display: flex;
+    justify-content: space-around;
+} */
+
+.bg-facebook-link {
+    background: #3156df;
+}
+
+.bg-linkdin-link {
+    background: #0e76a8;
+}
+
+.bg-twitter-link {
+    background: #00acee;
+}
+.bg-orange{
+    background: #ff8000;
+}
+
+/*
+home page style */
+/* .div-grand-benin{
+    animation: haut ease-out 2s;
+} */
+
+@keyframes haut {
+    0%{
+        opacity: 0;
+        margin-left: -100px  ;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+#navbar{
+    padding: 0;
+}
+.mobile-toggle,
+.mobile-nav-square {
+  display: none;
+  background: transparent !important;
+}
+.btn-x {
+  background: transparent !important;
+}
+.offcanvas {
+  display: none;
+}
+
+.logo-abbr{
+    width:220px;
+}
+.navbar-nav>div{
+    width: 60%;
+    margin-right:100px;
+}
+.li-devenir-partenaire>a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* Mobile navbar */
+.offcanvas-body > ul {
+    list-style-type: none;
+  }
+  .offcanvas-body > ul li {
+    padding-bottom: 8px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid silver;
+    font-weight: 500;
+  }
+  .offcanvas-body > ul > li a {
+    width: 100%;
+    font-weight: 500;
+    height: 100%;
+    color: #032497;
+  }
+
+@media screen and (max-width:1105px) {
+    .logo-abbr{
+        width:200px;
+    }
+    .navbar-nav>div{
+        width: 90%;
+        margin-right:50px;
+    }
+    .li-devenir-partenaire>a{
+        padding: 20px 30px 20px 35px;
+    }
+    .i-only-web{
+        display: none;
+    }
+}
+@media screen and (max-width:990px) {
+    .offcanvas,
+    .mobile-toggle {
+      display: block;
+    }
+    #flash {
+      display: none;
+    }
+    #navbar{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+}
+
+/* Page domaine style code  */
+
+#p-soutien{
+    width: 75%;
+}
+
+
+@media screen and (max-width:990px) {
+    #p-soutien{
+        width: 95%;
+        display: none;
+    }
+}
+
+/* Article page style code */
+
+.article-section-card{
+    background-color: rgb(235, 234, 234);
+    border-right: 15px solid silver;
+    width:49%;
+}
+@media screen and (max-width:990px) {
+    .article-section-card{
+        width: 100%;
+    }
+}
+#article-section-card-content{
+    display: flex;
+
+}
+#article-section-card-content>div:first-child{
+    width: 33.33%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+}
+#article-section-card-content>div:last-child{
+    width: 66.66%;
+
+}
+@media screen and (max-width:640px) {
+    #article-section-card-content {
+        flex-direction: column;
+    }
+    #article-section-card-content>div:last-child{
+        width: 100%;
+
+    }
+    #article-section-card-content>div:first-child{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 80%;
+    }
+    .article-section-card{
+        border-right: 5px solid silver;
+    }
+}
+
+
+/* Seconde
+
+cahier 2 pq   2400
+calculatrice  1500
+vrai dessinateur 500
+6 bics        600
+crayon-gomme   150
+colle-scoche   300
+couverture     500
+TP 200 pages   1000
+
+CI
+livre 2000
+sac 3500
+ardoise 400
+gomme + crayon + bic + craie 750
+goude 500
+cahier 1000 */
+
+
+
+
+/* Footer 1 style code */
+
+
+
+/* Footer style code */
+
+.section-footer {
+    background: #00000090;
+    font-size: 18px;
+}
+.section-footer form input {
+    background: #fdfcff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.last-footer-div p {
+    /* font-family: "Poppins"; */
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: -0.374639px;
+}
+
+.div-info-plus {
+    height: 200px;
+    width: 200px;
+    background: #ffa895;
+    color: #ffa895;
+    bottom: -10px;
+    left: -10px;
+    border-bottom-left-radius: 10px;
+}
+.last-footer-div {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.ul-info {
+    line-height: 35px;
+}
+
+.media-link {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+.plateforme-section {
+    padding-left: 20px;
+}
+.info-section {
+    padding-left: 15px;
+}
+.contact-section-content > div {
+    width: 50%;
+}
+.p-abonnement {
+    width: 95%;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    .section-footer {
+        font-size: 16px;
+    }
+    .logo {
+        margin-left: 5px;
+    }
+    .last-footer-div p {
+        font-size: 16px;
+    }
+    .p-abonnement {
+        font-size: 16px;
+        width: 97%;
+    }
+}
+
+#mobile-plateforme, #mobile-faq, .logo-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .div-info-plus {
+        height: 200px;
+        width: 200px;
+        background: #ffa895;
+        color: #ffa895;
+        bottom: -6px;
+        left: -6px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .form-content > form {
+        background: #fbfaff;
+        padding: 10px;
+        border-radius: 10px;
+        width: 93%;
+    }
+    .contact-section form input {
+        height: 50px;
+    }
+
+    .p-recommandation {
+        line-height: 20px;
+    }
+    .p-abonnement {
+        width: 95%;
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .last-footer-div{
+        display: flex;
+        justify-content: center;
+    }
+    .last-footer-div p {
+        font-size: 12px;
+        width: 95%;
+    }
+    #web-footer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .logo-web{
+        display: none;
+    }
+    #mobile-plateforme, #mobile-faq{
+        display: block;
+    }
+    #web-plateforme, #web-faq{
+        display: none;
+    }
+    .logo-mobile {
+        margin-left: 16px;
+        display: block;
+    }
+    .logo-mobile .p3{
+        margin-left: 35px;
+        font-weight: bold;
+    }
+    .logo-mobile .p1, .logo-mobile .p2{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    .logo-mobile .p1{
+        background-color: #C8CCFF;
+        color: #C8CCFF;
+
+    }
+    .logo-mobile .p2{
+        color: white;
+        background-color: white;
+        left: 22px;
+    }
+
+}

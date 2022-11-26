@@ -17,28 +17,29 @@
                 Nous aimerions recevoir de vos nouvelles. Intéressé à travailler ensemble ? Remplissez le formulaire ci-dessous avec quelques informations sur votre projet et je vous répondrai dès que possible. Veuillez m'accorder quelques jours pour répondre.
             </p>
             <br>
-                <form>
+                <form  method="POST" action="{{ route('messages.store') }}">
+                    @csrf
                     <div class="row">
                         <div class="col-sm-4">
-                            <input class="form-control" type="text" placeholder="Nom">
+                            <input class="form-control" type="text" name="nom" placeholder="Nom">
                         </div>
                         <div class="col-sm-4">
-                            <input class="form-control" type="text" placeholder="Prénoms">
+                            <input class="form-control" type="text" name="prenom" placeholder="Prénoms">
                         </div>
                         <div class="col-sm-4">
-                            <input class="form-control" type="text" placeholder="Email">
+                            <input class="form-control" type="text" name="email" placeholder="Email">
                         </div>
                     </div>
                         <br>
                     <div class="row">
                         <div class="col-sm-4">
-                            <input class="form-control" type="text" placeholder="Téléphone">
+                            <input class="form-control" type="text" name="telephone" placeholder="Téléphone">
                         </div>
                     </div>
                     <br>
                     <div class="row">
                         <div class="col-sm-12">
-                            <textarea placeholder="Type your message here..." class="form-control" rows="9"></textarea>
+                            <textarea placeholder="Type your message here..." name="message" class="form-control" rows="9"></textarea>
                         </div>
                     </div>
                     <br>
