@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -38,7 +39,8 @@ class ContactController extends Controller
     {
         $data = $request->all();
         Contact::create($data);
-        return back()->with('success', 'Message envoyé avec succès');
+        return back()->with('success','Message envoyé avec succès');
+
     }
 
     /**

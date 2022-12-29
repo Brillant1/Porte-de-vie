@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" style="background: #428bca">
     <div class="header-content">
         <nav class="navbar navbar-expand">
             <div class="collapse navbar-collapse justify-content-between">

@@ -17,23 +17,31 @@
                 Nous aimerions recevoir de vos nouvelles. Intéressé à travailler ensemble ? Remplissez le formulaire ci-dessous avec quelques informations sur votre projet et je vous répondrai dès que possible. Veuillez m'accorder quelques jours pour répondre.
             </p>
             <br>
+
+            @if(session('success'))
+                <div class="alert alert-success">
+                    <p>
+                        {{ session('success') }}
+                    </p>
+                </div>
+            @endif
                 <form  method="POST" action="{{ route('messages.store') }}">
                     @csrf
                     <div class="row">
                         <div class="col-sm-4">
-                            <input class="form-control" type="text" name="nom" placeholder="Nom">
+                            <input class="form-control" type="text" required name="nom" placeholder="Nom">
                         </div>
                         <div class="col-sm-4">
-                            <input class="form-control" type="text" name="prenom" placeholder="Prénoms">
+                            <input class="form-control" type="text"  required name="prenom" placeholder="Prénoms">
                         </div>
                         <div class="col-sm-4">
-                            <input class="form-control" type="text" name="email" placeholder="Email">
+                            <input class="form-control" type="text" required name="email" placeholder="Email">
                         </div>
                     </div>
                         <br>
                     <div class="row">
                         <div class="col-sm-4">
-                            <input class="form-control" type="text" name="telephone" placeholder="Téléphone">
+                            <input class="form-control" type="text" name="telephone" required placeholder="Téléphone">
                         </div>
                     </div>
                     <br>
@@ -52,6 +60,13 @@
                         </div>
                     </div>
                 </form>
+
+
+                @if(session('addedMessage'))
+                    <div class="alert alert-success fade show" role="alert">
+                        {{ session('addedMessage')}}
+                    </div>
+                @endif
 
         </article>
         <!-- /Article -->

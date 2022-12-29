@@ -13,53 +13,60 @@
                 </header>
 
                 <p class="text-center">
-                    Vous aimeriez voir le Prophète. Intéressez par les merveilles de Dieu? Alors remplissez le formulaire ci-dessous avec quelques informations sur vous même afin de prendre rendez vous ordinaire.S'il  s'agit  chez vous une consultation prophétique, veuillez faire retour sur <a href="rend_v_Prophetic.html">Rendez vous de consultation </a>
+                    Vous aimeriez voir le Prophète. Intéressez par les merveilles de Dieu? Alors remplissez le formulaire ci-dessous avec quelques informations sur vous même afin de prendre rendez vous ordinaire.S'il  s'agit  chez vous une consultation prophétique, veuillez faire retour sur <a href="{{ route('rendez-vous-prophetique') }}">Rendez vous de consultation </a>
                 </p>
-                <br>
-                    <form>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <textarea placeholder="Ecrivez les raisons de rendz vous..." class="form-control" rows="9"></textarea>
-                            </div>
+                @if(session('success'))
+                    <div class="alert alert-success show" role="alert">
+                          {{ session('success') }}  Code du rendez-vous: <span class=" fw-bold">{{ session('code') }}</span>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endif
+                <form method="POST" action="{{ route('appointments.store') }}">
+                    @csrf
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input class="form-control" type="text" placeholder="Nom" name="nom">
                         </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <input class="form-control" type="text" placeholder="Nom">
-                            </div>
-                            <br>
-                            <div class="col-sm-6">
-                                <input class="form-control" type="text" placeholder="Prénoms">
-                            </div>
 
-                            <div class="col-sm-6">
-                                <input class="form-control" type="text" placeholder="Email">
-                            </div>
+                        <div class="col-sm-6">
+                            <input class="form-control" type="text" placeholder="Prénoms" name="prenom">
                         </div>
-                            <br>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <input class="form-control" type="text" placeholder="Téléphone">
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row ">
-                            <div class="col-sm-6">
-                                <input type="date" name="anniversaire" class=" col-sm-12">
-                            </div>
-                        </div>
-                        <br>
+                    </div><br>
 
-                        <br>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label class="checkbox"><input type="checkbox"> Sign up for newsletter</label>
-                            </div>
-                            <div class="col-sm-6 text-right ">
-                                <input class="btn btn-action" type="submit" value="Envoyez le  message">
-                            </div>
+                    <div class="row">
+                        <div class="col-sm-6 ">
+                            <input class="form-control" type="mailto" placeholder="Email" name="email">
                         </div>
-                    </form>
+                        <div class="col-sm-6">
+                            <input class="form-control" type="text" placeholder="Téléphone" name="telephone">
+                        </div>
+                    </div> <br>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input class="form-control" type="date" placeholder="Date du rendez-vous" name="appointment_date">
+                        </div>
+                        <div class="col-sm-6">
+                            <input class="form-control" type="time" placeholder="Téléphone" name="appointment_time">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <textarea placeholder="Ecrivez les raisons de rendz vous..." class="form-control" rows="9" name="message" ></textarea>
+                        </div>
+                    </div>
+                    <input type="hidden" name="code">
+                    <br>
+
+                    <br>
+
+                    <div class="col-12">
+                        <a href="#"> <div class="col-sm-6 text-right ">
+                            <input class="btn btn-primary" type="submit" style="background-color: " value="Envoyer">
+                        </div></a>
+                      </div>
+                    </div>
+                </form>
 
             </article>
             <!-- /Article -->

@@ -10,7 +10,7 @@
             <ul class="nav navbar-nav pull-right">
                 <li><a href="{{ route('accueil') }}">Accueil</a></li>
                 <li ><a href="#program">Agenda</a></li>
-                <li ><a href="{{ route('service') }}">Services</a></li>
+                <li ><a href="{{ route('actualites.liste') }}">Actualités</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">A Propos <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -22,14 +22,14 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Plus de Pages <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Rendez-vous <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('rendez-vous-prophetique') }}">Barre latérale gauche</a></li>
-                        <li class="active"><a href="{{ route('rendez-vous-simple') }}">Barre latérale droit</a></li>
+                        <li><a href="{{ route('rendez-vous-prophetique') }}">Rendez-vous prophétique</a></li>
+                        <li class="active"><a href="{{ route('rendez-vous-simple') }}">Rendez-vous simple</a></li>
                     </ul>
                 </li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
-                <li><a class="btn" href="signin.html">s'identifier / S'inscrire</a></li>
+                <li><a class="btn" href="{{ route('login') }}">s'identifier / S'inscrire</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

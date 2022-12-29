@@ -10,7 +10,7 @@
 
     <!-- / service  -->
 
-    <div class="row section featured topspace ">
+    {{-- <div class="row section featured topspace ">
         <h2 class="section-title text-center"><span>Services</span></h2>
         <div class="row">
             <div class="col-md-3 col-sm-6 highlight">
@@ -115,82 +115,33 @@
                 </p>
             </div>
         </div>
-    </div> <!-- / service -->
+    </div> <!-- / service --> --}}
     <!-- /services recents -->
 
 
     <div class="row section recentworks topspace">
 
-        <h2 class="section-title text-center"><span>services recents</span></h2>
+        <h2 class="section-title text-center"><span>Actualités</span></h2>
 
-        <div class="thumbnails recentworks row">
+        <div class="">
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <a class="thumbnail" href="sidebar-right.html">
-                    <span class="img">
-                        <img src="{{ asset('assets/images/s1.jpg') }}" alt="">
-                        <span class="cover"><span class="more">See details &rarr;</span></span>
-                    </span>
-                    <span class="title">Sample title - big data solutions</span>
-                </a>
+            @if(!is_null($actualites))
+            @foreach ($actualites as $actualite)
 
-            </div>
 
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <a class="thumbnail" href="sidebar-right.html">
+                <a class="thumbnail" href="{{ route('detailActualite', $actualite->id) }}">
                     <span class="img">
-                        <img src="{{ asset('assets/images/s1.jpg') }}" alt="">
-                        <span class="cover"><span class="more">See details &rarr;</span></span>
+                        <img src="{{ asset('storage/' . $actualite->photo) }}" alt="">
+
                     </span>
-                    <span class="title">Pure ipsum - development services </span>
+                    <span class="title">{{ $actualite->titre }}</span> <br>
+                    <a href="{{ route('detailActualite', $actualite->id) }}" class=""><span class="more">Voir détails &rarr;</span></a>
                 </a>
-
             </div>
+            @endforeach
+            @endif
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <a class="thumbnail" href="sidebar-right.html">
-                    <span class="img">
-                        <img src="{{ asset('assets/images/s1.jpg') }}" alt="">
-                        <span class="cover"><span class="more">See details &rarr;</span></span>
-                    </span>
-                    <span class="title">Lorem studios - interior and patio design</span>
-                </a>
-
-            </div>
-        </div>
-        <div class="thumbnails recentworks row">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <a class="thumbnail" href="sidebar-right.html">
-                    <span class="img">
-                        <img src="{{ asset('assets/images/s1.jpg') }}" alt="">
-                        <span class="cover"><span class="more">See details &rarr;</span></span>
-                    </span>
-                    <span class="title">Pure ipsum - development services </span>
-                </a>
-
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <a class="thumbnail" href="sidebar-right.html">
-                    <span class="img">
-                        <img src="{{ asset('assets/images/s1.jpg') }}" alt="">
-                        <span class="cover"><span class="more">See details &rarr;</span></span>
-                    </span>
-                    <span class="title">Lorem studios - interior and patio design</span>
-                </a>
-
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                <a class="thumbnail" href="sidebar-right.html">
-                    <span class="img">
-                        <img src="{{ asset('assets/images/s1.jpg') }}" alt="">
-                        <span class="cover"><span class="more">See details &rarr;</span></span>
-                    </span>
-                    <span class="title">Lorem studios - interior and patio design</span>
-                </a>
-
-            </div>
         </div>
 
     </div> <!-- /services recents -->

@@ -7,3 +7,6 @@
 <link rel="stylesheet" href="{{ asset('admin/css/lightbox.min.css') }}"/>
 <link rel="stylesheet" href="{{asset('admin/js/yearpicker.js')}}">
 <link rel="stylesheet" href="{{ asset('admin/css/magnific-popup.css') }}">
+<link rel="stylesheet" href="{{ asset('admin/css/bootstrap-select.min.css') }}">
+
+<link rel="stylesheet" href="vendor/chartist/css/chartist.min.css">

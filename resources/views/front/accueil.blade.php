@@ -21,7 +21,7 @@
 
                 <div class="row  col-md-12">
                     <div class="col-md-3 col-sm-6 highlight">
-                        <div class="h-caption"><h4>   <img src="{{ asset('assets/images/François.jpg') }}" alt="" class="img-rounded pull-right" width="300" >  <a href="biographie_Prophète.html">Biographie du prophète </a> </h4>
+                        <div class="h-caption"><h4>   <img src="{{ asset('assets/images/François.jpg') }}" alt="" class="img-rounded pull-right" width="300" >  <a href="{{ route('biographie') }}">Biographie du prophète </a> </h4>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 highlight">
@@ -30,10 +30,10 @@
                                 <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Selection la catégorie de don <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="fait_Don.html">DÎMES</a></li>
+                                        <li><a href="{{ route('don') }}">DÎMES</a></li>
                                         <li class="active"><a href="fait_Don.html">OFFRANDES</a></li>
                                         <li><a href="fait_Don.html">SEMENCES</a></li>
-                                        <li class="active"><a href="partenaire.html">PARTENARIAT</a></li>
+                                        <li class="active"><a href="{{ route('partenaire') }}">PARTENARIAT</a></li>
                                     </ul>
                                 </li>
                             </h4>
@@ -43,8 +43,8 @@
                         <div class="h-caption"><h4><img src="{{ asset('assets/images/rendvous.png') }}" alt="" class="img-rounded pull-right" width="300" ><li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Prendre un rendez vous<b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="rend_v_simple.html">rendez vous simple</a></li>
-                                        <li class="active"><a href="rend_v_Prophetic.html">rendez vous de consultation prohétique </a></li>
+                                        <li><a href="{{ route('rendez-vous-simple') }}">rendez vous simple</a></li>
+                                        <li class="active"><a href="{{ route('rendez-vous-prophetique') }}">rendez vous de consultation prohétique </a></li>
 
                                     </ul>
                                 </li></h4>
