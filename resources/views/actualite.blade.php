@@ -29,7 +29,7 @@
         <h1 class=" text-center mt-5">Activité en cours</h1>
         <div class="container mt-5 pt-5">
             <div class=" row justify-content-between">
-                <div class=" col-5 border border-2 border-dark rounded position-relative" style="height:350px" >
+               <div class=" col-5 border border-2 border-dark rounded position-relative" style="height:350px" >
                     <img src="{{ asset('img/img-pdv1.jpeg') }}" alt="" class="rounded current-activity-image w-100" style="object-fit: cover;">
                 </div>
                 <div class="ps-5 col-7">

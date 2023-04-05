@@ -14,7 +14,6 @@
                         <li><a href="" class="nav-link text-white border border-2 border-white rounded">FAIRE UN DON</a></li>
                     </ul>
                </div>
-
         </nav>
     </header>
 </div>
